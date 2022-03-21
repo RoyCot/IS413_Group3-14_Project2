@@ -23,8 +23,10 @@ namespace Group3_14_Project2.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult AppointmentForm()
+        public IActionResult AppointmentForm(string time, string date)
         {
+            ViewBag.Time = time;
+            ViewBag.Date = date;
             return View();
         }
         [HttpPost]
