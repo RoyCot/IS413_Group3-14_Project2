@@ -5,20 +5,70 @@
     <!--This class uses bootstrap to give the table a more professional look-->
     <thead class="font-weight-bold">
         <tr>
-            <td>Time Slot</td>
-            <td>Day</td>
-            <td>Date</td>
+            @foreach (var x in Model)
+            {
+                <td>@x.DayName - @x.Date</td>
+                <td>Available?</td>
+            }
         </tr>
 
     </thead>
     <tbody>
-        @foreach (var x in Model) //Goes through each MovieEntry in the model, and displays the information for it
+        @foreach (var x in Model) //Goes through each available timeslot and displays it
         {
             <tr>
-                <td hidden></td>
-                <td></td>
-                <td><a asp-controller="Home" asp-action="Edit" asp-route-TimeId="">Edit</a></td> <!--Passes in the MovieId so we can then grab that entry from the database-->
-                <td><a asp-controller="Home" asp-action="Delete" asp-route-TimeId="">Delete</a></td>
+
+                <td>@x.Time1</td>
+                <td>@x.Available1</td>
+            </tr>
+            <tr>
+
+                <td>@x.Time2</td>
+                <td>@x.Available2</td>
+            </tr>
+            <tr>
+                <td>@x.Time3</td>
+                <td>@x.Available3</td>
+            </tr>
+            <tr>
+                <td>@x.Time4</td>
+                <td>@x.Available4</td>
+            </tr>
+            <tr>
+                <td>@x.Time5</td>
+                <td>@x.Available5</td>
+            </tr>
+            <tr>
+                <td>@x.Time6</td>
+                <td>@x.Available6</td>
+            </tr>
+            <tr>
+                <td>@x.Time7</td>
+                <td>@x.Available7</td>
+            </tr>
+            <tr>
+                <td>@x.Time8</td>
+                <td>@x.Available8</td>
+            </tr>
+            <tr>
+                <td>@x.Time9</td>
+                <td>@x.Available9</td>
+            </tr>
+            <tr>
+                <td>@x.Time10</td>
+                <td>@x.Available10</td>
+            </tr>
+            <tr>
+                <td>@x.Time11</td>
+                <td>@x.Available11</td>
+            </tr>
+            <tr>
+                <td>@x.Time12</td>
+                <td>@x.Available12</td>
+            </tr>
+            <tr>
+                <td>@x.Time13</td>
+                <td>@x.Available13</td>
             </tr>
         }
 
