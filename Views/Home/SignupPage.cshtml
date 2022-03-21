@@ -3,71 +3,128 @@
 @model List<TourTimes>
 <table class="table table-bordered table-striped">
     <!--This class uses bootstrap to give the table a more professional look-->
-    <thead class="font-weight-bold">
-        <tr>
-            @foreach (var x in Model)
-            {
-                <td>@x.DayName - @x.Date</td>
-                <td>Available?</td>
-            }
-        </tr>
-
-    </thead>
     <tbody>
         @foreach (var x in Model) //Goes through each available timeslot and displays it
         {
+            <tr class="font-weight-bold">
+                <td>@x.DayName - @x.Date</td>
+                <td>Available?</td>
+            </tr>
             <tr>
-
-                <td>@x.Time1</td>
+                <td>
+                    @if (x.Available1 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time1" asp-route-date="@x.Date">@x.Time1</a> }
+                else
+                { @x.Time1}
+                </td>
                 <td>@x.Available1</td>
             </tr>
             <tr>
-
-                <td>@x.Time2</td>
+                <td>
+                    @if (x.Available2 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time2" asp-route-date="@x.Date">@x.Time2</a> }
+                else
+                { @x.Time2}
+                </td>
                 <td>@x.Available2</td>
             </tr>
             <tr>
-                <td>@x.Time3</td>
+                <td>
+                    @if (x.Available3 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time3" asp-route-date="@x.Date">@x.Time3</a> }
+                else
+                { @x.Time3}
+                </td>
                 <td>@x.Available3</td>
             </tr>
             <tr>
-                <td>@x.Time4</td>
+                <td>
+                    @if (x.Available4 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time4" asp-route-date="@x.Date">@x.Time4</a> }
+                else
+                { @x.Time4}
+                </td>
                 <td>@x.Available4</td>
             </tr>
             <tr>
-                <td>@x.Time5</td>
+                <td>
+                    @if (x.Available5 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time5" asp-route-date="@x.Date">@x.Time5</a> }
+                else
+                { @x.Time5}
+                </td>
                 <td>@x.Available5</td>
             </tr>
             <tr>
-                <td>@x.Time6</td>
+                <td>
+                    @if (x.Available6 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time6" asp-route-date="@x.Date">@x.Time6</a> }
+                else
+                { @x.Time6}
+                </td>
                 <td>@x.Available6</td>
             </tr>
             <tr>
-                <td>@x.Time7</td>
+                <td>
+                    @if (x.Available7 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time7" asp-route-date="@x.Date">@x.Time7</a> }
+                else
+                { @x.Time7}
+                </td>
                 <td>@x.Available7</td>
             </tr>
             <tr>
-                <td>@x.Time8</td>
+                <td>
+                    @if (x.Available8 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time8" asp-route-date="@x.Date">@x.Time8</a> }
+                else
+                { @x.Time8}
+                </td>
                 <td>@x.Available8</td>
             </tr>
             <tr>
-                <td>@x.Time9</td>
+                <td>
+                    @if (x.Available9 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time9" asp-route-date="@x.Date">@x.Time9</a> }
+                else
+                { @x.Time9}
+                </td>
                 <td>@x.Available9</td>
             </tr>
             <tr>
-                <td>@x.Time10</td>
+                <td>
+                    @if (x.Available10 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time10" asp-route-date="@x.Date">@x.Time10</a> }
+                else
+                { @x.Time10}
+                </td>
                 <td>@x.Available10</td>
             </tr>
             <tr>
-                <td>@x.Time11</td>
+                <td>
+                    @if (x.Available11 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time11" asp-route-date="@x.Date">@x.Time11</a> }
+                else
+                { @x.Time11}
+                </td>
                 <td>@x.Available11</td>
             </tr>
             <tr>
-                <td>@x.Time12</td>
+                <td>
+                    @if (x.Available12 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time12" asp-route-date="@x.Date">@x.Time12</a> }
+                else
+                { @x.Time12}
+                </td>
                 <td>@x.Available12</td>
             </tr>
             <tr>
-                <td>@x.Time13</td>
+                <td>
+                    @if (x.Available13 == true)
+                    {<a asp-for="Home" asp-action="AppointmentForm" asp-route-time="@x.Time13" asp-route-date="@x.Date">@x.Time13</a> }
+                else
+                { @x.Time13}
+                </td>
                 <td>@x.Available13</td>
             </tr>
         }
