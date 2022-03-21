@@ -12,8 +12,8 @@ namespace Group3_14_Project2.Models
         {
             //Leave blank for now
         }
+        public DbSet<Appointments> Appointments { get; set; }
         public DbSet<TourTimes> Times { get; set; }
-        public DbSet<TourTimes> Days { get; set; }
         protected override void OnModelCreating(ModelBuilder mb)  //as long as its in the chain/inherited its ok
         {
             mb.Entity<TourTimes>().HasData( //This seeds the database with some initial entries

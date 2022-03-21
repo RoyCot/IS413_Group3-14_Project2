@@ -10,8 +10,9 @@ namespace Group3_14_Project2.Models
     {
         [Key]
         [Required]
-        public string TourId { get; set; }
+        public int TourId { get; set; }
         public string Date { get; set; }
+        public string Time { get; set; }
         public string GroupName { get; set; }
         [Range(0, 15, ErrorMessage = "The value, {0}, must be smaller than {1}.")]
         public int GroupSize { get; set; }
