@@ -5,7 +5,9 @@
     <!--This class uses bootstrap to give the table a more professional look-->
     <thead class="font-weight-bold">
         <tr>
-            <td>Signup Time</td>
+            <td>Time Slot</td>
+            <td>Day</td>
+            <td>Date</td>
         </tr>
 
     </thead>
@@ -13,9 +15,10 @@
         @foreach (var x in Model) //Goes through each MovieEntry in the model, and displays the information for it
         {
             <tr>
-                <td>@x.Time</td>
-                <td><a asp-controller="Home" asp-action="Edit" asp-route-TimeId="@x.TimeId">Edit</a></td> <!--Passes in the MovieId so we can then grab that entry from the database-->
-                <td><a asp-controller="Home" asp-action="Delete" asp-route-TimeId="@x.TimeId">Delete</a></td>
+                <td hidden></td>
+                <td></td>
+                <td><a asp-controller="Home" asp-action="Edit" asp-route-TimeId="">Edit</a></td> <!--Passes in the MovieId so we can then grab that entry from the database-->
+                <td><a asp-controller="Home" asp-action="Delete" asp-route-TimeId="">Delete</a></td>
             </tr>
         }
 
