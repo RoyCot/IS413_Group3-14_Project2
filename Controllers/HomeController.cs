@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Group3_14_Project2.Controllers
 {
     public class HomeController : Controller
-    {   
+    {
         private TourTimesContext context { get; set; }
 
         public HomeController(TourTimesContext blah)
@@ -22,6 +22,13 @@ namespace Group3_14_Project2.Controllers
         {
             return View();
         }
+      
+        public IActionResult SignupPage()
+        {
+            var Times = context.Times.ToList();
+            return View(Times);
+        }
+
         [HttpGet]
         public IActionResult AppointmentForm(string time, string date)
         {
@@ -35,7 +42,13 @@ namespace Group3_14_Project2.Controllers
             context.Add(appointment);
             context.SaveChanges();
 
-            return RedirectToPage("/Index");
+            return View("Index");
+        }
+
+        public IActionResult Appointments()
+        {
+            var Appointments = context.Appointments.ToList();
+            return View(Appointments);
         }
     }
 }
