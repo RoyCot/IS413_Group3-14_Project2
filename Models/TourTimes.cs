@@ -25,5 +25,18 @@ namespace Group3_14_Project2.Models
         public string Time11 { get; set; }
         public string Time12 { get; set; }
         public string Time13 { get; set; }
+        public bool Available1 { get; set; }
+        public bool Available2 { get; set; }
+        public bool Available3 { get; set; }
+        public bool Available4 { get; set; }
+        public bool Available5 { get; set; }
+        public bool Available6 { get; set; }
+        public bool Available7 { get; set; }
+        public bool Available8 { get; set; }
+        public bool Available9 { get; set; }
+        public bool Available10 { get; set; }
+        public bool Available11 { get; set; }
+        public bool Available12 { get; set; }
+        public bool Available13 { get; set; }
     }
 }

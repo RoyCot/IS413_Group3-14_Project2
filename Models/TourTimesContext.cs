@@ -33,7 +33,21 @@ namespace Group3_14_Project2.Models
                     Time10 = "5 PM",
                     Time11 = "6 PM",
                     Time12 = "7 PM",
-                    Time13 = "8 PM"
+                    Time13 = "8 PM",
+                    Available1 = true,
+                    Available2 = true,
+                    Available3 = true,
+                    Available4 = true,
+                    Available5 = true,
+                    Available6 = true,
+                    Available7 = true,
+                    Available8 = true,
+                    Available9 = true,
+                    Available10 = true,
+                    Available11 = true,
+                    Available12 = true,
+                    Available13 = true
+                    
                 },
                 new TourTimes
                 {
@@ -51,7 +65,20 @@ namespace Group3_14_Project2.Models
                     Time10 = "5 PM",
                     Time11 = "6 PM",
                     Time12 = "7 PM",
-                    Time13 = "8 PM"
+                    Time13 = "8 PM",
+                    Available1 = true,
+                    Available2 = true,
+                    Available3 = true,
+                    Available4 = true,
+                    Available5 = true,
+                    Available6 = true,
+                    Available7 = true,
+                    Available8 = true,
+                    Available9 = true,
+                    Available10 = true,
+                    Available11 = true,
+                    Available12 = true,
+                    Available13 = true
                 },
                 new TourTimes
                 {
@@ -69,7 +96,20 @@ namespace Group3_14_Project2.Models
                     Time10 = "5 PM",
                     Time11 = "6 PM",
                     Time12 = "7 PM",
-                    Time13 = "8 PM"
+                    Time13 = "8 PM",
+                    Available1 = true,
+                    Available2 = true,
+                    Available3 = true,
+                    Available4 = true,
+                    Available5 = true,
+                    Available6 = true,
+                    Available7 = true,
+                    Available8 = true,
+                    Available9 = true,
+                    Available10 = true,
+                    Available11 = true,
+                    Available12 = true,
+                    Available13 = true
                 },
                 new TourTimes
                 {
@@ -87,7 +127,20 @@ namespace Group3_14_Project2.Models
                     Time10 = "5 PM",
                     Time11 = "6 PM",
                     Time12 = "7 PM",
-                    Time13 = "8 PM"
+                    Time13 = "8 PM",
+                    Available1 = true,
+                    Available2 = true,
+                    Available3 = true,
+                    Available4 = true,
+                    Available5 = true,
+                    Available6 = true,
+                    Available7 = true,
+                    Available8 = true,
+                    Available9 = true,
+                    Available10 = true,
+                    Available11 = true,
+                    Available12 = true,
+                    Available13 = true
                 },
                 new TourTimes
                 {
@@ -105,7 +158,20 @@ namespace Group3_14_Project2.Models
                     Time10 = "5 PM",
                     Time11 = "6 PM",
                     Time12 = "7 PM",
-                    Time13 = "8 PM"
+                    Time13 = "8 PM",
+                    Available1 = true,
+                    Available2 = true,
+                    Available3 = true,
+                    Available4 = true,
+                    Available5 = true,
+                    Available6 = true,
+                    Available7 = true,
+                    Available8 = true,
+                    Available9 = true,
+                    Available10 = true,
+                    Available11 = true,
+                    Available12 = true,
+                    Available13 = true
                 },
                 new TourTimes
                 {
@@ -123,7 +189,20 @@ namespace Group3_14_Project2.Models
                     Time10 = "5 PM",
                     Time11 = "6 PM",
                     Time12 = "7 PM",
-                    Time13 = "8 PM"
+                    Time13 = "8 PM",
+                    Available1 = true,
+                    Available2 = true,
+                    Available3 = true,
+                    Available4 = true,
+                    Available5 = true,
+                    Available6 = true,
+                    Available7 = true,
+                    Available8 = true,
+                    Available9 = true,
+                    Available10 = true,
+                    Available11 = true,
+                    Available12 = true,
+                    Available13 = true
                 },
                 new TourTimes
                 {
@@ -141,7 +220,20 @@ namespace Group3_14_Project2.Models
                     Time10 = "5 PM",
                     Time11 = "6 PM",
                     Time12 = "7 PM",
-                    Time13 = "8 PM"
+                    Time13 = "8 PM",
+                    Available1 = true,
+                    Available2 = true,
+                    Available3 = true,
+                    Available4 = true,
+                    Available5 = true,
+                    Available6 = true,
+                    Available7 = true,
+                    Available8 = true,
+                    Available9 = true,
+                    Available10 = true,
+                    Available11 = true,
+                    Available12 = true,
+                    Available13 = true
                 });
         }
     }

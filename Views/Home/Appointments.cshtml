@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Appointments";
+}
+@model List<Appointments>
+
+<div class="d-flex justify-content-center">
+    <h1 class="display-4">Appointments</h1>
+
+    <table class="table table-bordered table-striped">
+        <thead class="font-weight-bold">
+            <tr>
+                <th>Group Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Group Size</th>
+                <th>Email</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var x in Model)
+            { 
+            <tr>
+                <td>@x.GroupName</td>
+                <td>@x.Date</td>
+                <td>@x.Time</td>
+                <td>@x.GroupSize</td>
+                <td>@x.Email</td>
+                <td><a>Edit</a></td>
+                <td><a>Delete</a></td>
+            </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
