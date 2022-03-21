@@ -20,6 +20,45 @@ namespace Group3_14_Project2.Migrations
                     b.Property<string>("Date")
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("Available1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available10")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available11")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available12")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available13")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available7")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available8")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available9")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("DayName")
                         .HasColumnType("TEXT");
 
@@ -70,6 +109,19 @@ namespace Group3_14_Project2.Migrations
                         new
                         {
                             Date = "3/23/2022",
+                            Available1 = true,
+                            Available10 = true,
+                            Available11 = true,
+                            Available12 = true,
+                            Available13 = true,
+                            Available2 = true,
+                            Available3 = true,
+                            Available4 = true,
+                            Available5 = true,
+                            Available6 = true,
+                            Available7 = true,
+                            Available8 = true,
+                            Available9 = true,
                             DayName = "Wednesday",
                             Time1 = "8 AM",
                             Time10 = "5 PM",
@@ -88,6 +140,19 @@ namespace Group3_14_Project2.Migrations
                         new
                         {
                             Date = "3/24/2022",
+                            Available1 = true,
+                            Available10 = true,
+                            Available11 = true,
+                            Available12 = true,
+                            Available13 = true,
+                            Available2 = true,
+                            Available3 = true,
+                            Available4 = true,
+                            Available5 = true,
+                            Available6 = true,
+                            Available7 = true,
+                            Available8 = true,
+                            Available9 = true,
                             DayName = "Thursday",
                             Time1 = "8 AM",
                             Time10 = "5 PM",
@@ -106,6 +171,19 @@ namespace Group3_14_Project2.Migrations
                         new
                         {
                             Date = "3/25/2022",
+                            Available1 = true,
+                            Available10 = true,
+                            Available11 = true,
+                            Available12 = true,
+                            Available13 = true,
+                            Available2 = true,
+                            Available3 = true,
+                            Available4 = true,
+                            Available5 = true,
+                            Available6 = true,
+                            Available7 = true,
+                            Available8 = true,
+                            Available9 = true,
                             DayName = "Friday",
                             Time1 = "8 AM",
                             Time10 = "5 PM",
@@ -124,6 +202,19 @@ namespace Group3_14_Project2.Migrations
                         new
                         {
                             Date = "3/26/2022",
+                            Available1 = true,
+                            Available10 = true,
+                            Available11 = true,
+                            Available12 = true,
+                            Available13 = true,
+                            Available2 = true,
+                            Available3 = true,
+                            Available4 = true,
+                            Available5 = true,
+                            Available6 = true,
+                            Available7 = true,
+                            Available8 = true,
+                            Available9 = true,
                             DayName = "Saturday",
                             Time1 = "8 AM",
                             Time10 = "5 PM",
@@ -142,6 +233,19 @@ namespace Group3_14_Project2.Migrations
                         new
                         {
                             Date = "3/27/2022",
+                            Available1 = true,
+                            Available10 = true,
+                            Available11 = true,
+                            Available12 = true,
+                            Available13 = true,
+                            Available2 = true,
+                            Available3 = true,
+                            Available4 = true,
+                            Available5 = true,
+                            Available6 = true,
+                            Available7 = true,
+                            Available8 = true,
+                            Available9 = true,
                             DayName = "Sunday",
                             Time1 = "8 AM",
                             Time10 = "5 PM",
@@ -160,6 +264,19 @@ namespace Group3_14_Project2.Migrations
                         new
                         {
                             Date = "3/28/2022",
+                            Available1 = true,
+                            Available10 = true,
+                            Available11 = true,
+                            Available12 = true,
+                            Available13 = true,
+                            Available2 = true,
+                            Available3 = true,
+                            Available4 = true,
+                            Available5 = true,
+                            Available6 = true,
+                            Available7 = true,
+                            Available8 = true,
+                            Available9 = true,
                             DayName = "Monday",
                             Time1 = "8 AM",
                             Time10 = "5 PM",
@@ -178,6 +295,19 @@ namespace Group3_14_Project2.Migrations
                         new
                         {
                             Date = "3/29/2022",
+                            Available1 = true,
+                            Available10 = true,
+                            Available11 = true,
+                            Available12 = true,
+                            Available13 = true,
+                            Available2 = true,
+                            Available3 = true,
+                            Available4 = true,
+                            Available5 = true,
+                            Available6 = true,
+                            Available7 = true,
+                            Available8 = true,
+                            Available9 = true,
                             DayName = "Tuesday",
                             Time1 = "8 AM",
                             Time10 = "5 PM",
