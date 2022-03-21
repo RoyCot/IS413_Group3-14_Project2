@@ -15,6 +15,31 @@ namespace Group3_14_Project2.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.22");
 
+            modelBuilder.Entity("Group3_14_Project2.Models.Appointments", b =>
+                {
+                    b.Property<string>("TourId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Date")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("GroupName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("GroupSize")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PhoneNum")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("TourId");
+
+                    b.ToTable("Appointments");
+                });
+
             modelBuilder.Entity("Group3_14_Project2.Models.TourTimes", b =>
                 {
                     b.Property<string>("Date")
@@ -64,7 +89,7 @@ namespace Group3_14_Project2.Migrations
 
                     b.HasKey("Date");
 
-                    b.ToTable("TourTimes");
+                    b.ToTable("Times");
 
                     b.HasData(
                         new
