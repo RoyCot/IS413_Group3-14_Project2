@@ -40,5 +40,10 @@ namespace Group3_14_Project2.Controllers
             var Times = context.Times.ToList();
             return View(Times);
         }
+
+        public IActionResult Appointments()
+        {
+            return View();
+        }
     }
 }
