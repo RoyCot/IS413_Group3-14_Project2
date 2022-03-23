@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Cancel Appointment";
+}
+
+@model Appointments
+
+<h2>Confirm Cancellation</h2>
+<h4>Are you sure you would like to cancel your temple tour? Your spot will be made available for other to select.</h4>
+
+<form method="post" asp-controller="Home" asp-action="Cancel">
+    <button type="submit">Cancel</button>
+    <a asp-controller="Home" asp-action="Appointments" class="btn">Return</a>
+    <input type="hidden" asp-for="TourId" />
+</form>
