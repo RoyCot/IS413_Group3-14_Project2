@@ -37,5 +37,12 @@ namespace Group3_14_Project2.Controllers
 
             return RedirectToPage("/Index");
         }
+        [HttpGet]
+        public IActionResult Edit(int tourid)
+        {
+            var appointment = context.Appointments.Single(x => x.TourId == tourid);
+
+            return View("AppointmentForm", appointment);
+        }
     }
 }
