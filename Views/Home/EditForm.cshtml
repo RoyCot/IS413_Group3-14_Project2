@@ -6,18 +6,18 @@
     <form method="post">
         <div asp-validation-summary="All"></div>
         <label asp-for="Date">Date: </label>
-        <input asp-for="Date" readonly value="@ViewBag.Date" /><br />
+        <input asp-for="Date" readonly required value="@ViewBag.Date" /><br />
         <label asp-for="Time">Time: </label>
-        <input asp-for="Time" readonly value="@ViewBag.Time" /><br />
+        <input asp-for="Time" readonly required value="@ViewBag.Time" /><br />
         <label asp-for="GroupName">Group Name: </label>
-        <input asp-for="GroupName" required/><br />
+        <input asp-for="GroupName" required /><br />
         <label asp-for="GroupSize">Group Size: </label>
-        <input asp-for="GroupSize" required/><br />
+        <input asp-for="GroupSize" required max="15" min="1" type="number" /><br />
         <label asp-for="Email">Email: </label>
         <input asp-for="Email" required /><br />
         <label asp-for="PhoneNum">Phone Number: </label>
         <input asp-for="PhoneNum" /><br />
-        @*<input type="hidden" asp-for="TourId" />*@
+        <input type="hidden" asp-for="TourId" />
 
         <button class="btn btn-success" action="submit">Submit Appointment</button>
     </form>

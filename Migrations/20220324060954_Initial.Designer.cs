@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Group3_14_Project2.Migrations
 {
     [DbContext(typeof(TourTimesContext))]
-    [Migration("20220323205845_Initial")]
+    [Migration("20220324060954_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -166,7 +166,7 @@ namespace Group3_14_Project2.Migrations
                             Time2 = "9 AM",
                             Time3 = "10 AM",
                             Time4 = "11 AM",
-                            Time5 = "12 AM",
+                            Time5 = "12 PM",
                             Time6 = "1 PM",
                             Time7 = "2 PM",
                             Time8 = "3 PM",
@@ -197,7 +197,7 @@ namespace Group3_14_Project2.Migrations
                             Time2 = "9 AM",
                             Time3 = "10 AM",
                             Time4 = "11 AM",
-                            Time5 = "12 AM",
+                            Time5 = "12 PM",
                             Time6 = "1 PM",
                             Time7 = "2 PM",
                             Time8 = "3 PM",
@@ -228,7 +228,7 @@ namespace Group3_14_Project2.Migrations
                             Time2 = "9 AM",
                             Time3 = "10 AM",
                             Time4 = "11 AM",
-                            Time5 = "12 AM",
+                            Time5 = "12 PM",
                             Time6 = "1 PM",
                             Time7 = "2 PM",
                             Time8 = "3 PM",
@@ -259,7 +259,7 @@ namespace Group3_14_Project2.Migrations
                             Time2 = "9 AM",
                             Time3 = "10 AM",
                             Time4 = "11 AM",
-                            Time5 = "12 AM",
+                            Time5 = "12 PM",
                             Time6 = "1 PM",
                             Time7 = "2 PM",
                             Time8 = "3 PM",
@@ -290,7 +290,7 @@ namespace Group3_14_Project2.Migrations
                             Time2 = "9 AM",
                             Time3 = "10 AM",
                             Time4 = "11 AM",
-                            Time5 = "12 AM",
+                            Time5 = "12 PM",
                             Time6 = "1 PM",
                             Time7 = "2 PM",
                             Time8 = "3 PM",
@@ -321,7 +321,7 @@ namespace Group3_14_Project2.Migrations
                             Time2 = "9 AM",
                             Time3 = "10 AM",
                             Time4 = "11 AM",
-                            Time5 = "12 AM",
+                            Time5 = "12 PM",
                             Time6 = "1 PM",
                             Time7 = "2 PM",
                             Time8 = "3 PM",
@@ -352,7 +352,7 @@ namespace Group3_14_Project2.Migrations
                             Time2 = "9 AM",
                             Time3 = "10 AM",
                             Time4 = "11 AM",
-                            Time5 = "12 AM",
+                            Time5 = "12 PM",
                             Time6 = "1 PM",
                             Time7 = "2 PM",
                             Time8 = "3 PM",
