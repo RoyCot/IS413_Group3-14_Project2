@@ -22,7 +22,7 @@ namespace Group3_14_Project2.Controllers
         {
             return View();
         }
-      
+
         public IActionResult SignupPage()
         {
             var Times = context.Times.ToList();
@@ -116,20 +116,30 @@ namespace Group3_14_Project2.Controllers
             return View(Appointments);
         }
 
-        [HttpGet]
-        public IActionResult Edit(int appointmentId)
-        {
-            ViewBag.GroupName = context.Appointments.ToList();
-            var appointment = context.Appointments.Single(x => x.TourId == appointmentId);
-            return View("AppointmentForm", appointment);
-        }
+        //[HttpGet]
+        //public IActionResult Edit(int appointmentId)
+        //{
+        //    ViewBag.GroupName = context.Appointments.ToList();
+        //    var appointment = context.Appointments.Single(x => x.TourId == appointmentId);
+        //    return View("AppointmentForm", appointment);
+        //}
 
         [HttpPost]
         public IActionResult Edit(Appointments ap)
         {
+            if (ModelState.IsValid)
+            {
             context.Update(ap);
             context.SaveChanges();
             return RedirectToAction("Appointments");
+            }
+            else
+            {
+                ViewBag.Date = ap.Date;
+                ViewBag.Time = ap.Time;
+                return View("EditForm", ap);
+            }
+
         }
 
         [HttpGet]
@@ -147,11 +157,13 @@ namespace Group3_14_Project2.Controllers
             return RedirectToAction("Appointments");
         }
         [HttpGet]
-        public IActionResult Edit(int tourid)
+        public IActionResult Edit(int appointmentid)
         {
-            var appointment = context.Appointments.Single(x => x.TourId == tourid);
+            var appointment = context.Appointments.Single(x => x.TourId == appointmentid);
+            ViewBag.Date = appointment.Date;
+            ViewBag.Time = appointment.Time;
 
-            return View("AppointmentForm", appointment);
+            return View("EditForm", appointment);
         }
     }
 }
