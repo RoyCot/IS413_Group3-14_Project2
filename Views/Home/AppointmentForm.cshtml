@@ -4,6 +4,7 @@
 
 <div class="form-group">
     <form method="post">
+        <div asp-validation-summary="All"></div>
         <label asp-for="Date">Date: </label>
         <input asp-for="Date" value="@ViewBag.Date" /><br />
         <label asp-for="Time">Time: </label>
@@ -16,6 +17,7 @@
         <input asp-for="Email" /><br />
         <label asp-for="PhoneNum">Phone Number: </label>
         <input asp-for="PhoneNum" /><br />
+        <input type="hidden" asp-for="TourId" />
 
         <button class="btn btn-success" action="submit">Submit Appointment</button>
     </form>

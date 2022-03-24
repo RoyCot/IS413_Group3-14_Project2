@@ -22,12 +22,15 @@ namespace Group3_14_Project2.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Date")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("GroupName")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("GroupSize")
@@ -37,6 +40,7 @@ namespace Group3_14_Project2.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Time")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("TourId");
